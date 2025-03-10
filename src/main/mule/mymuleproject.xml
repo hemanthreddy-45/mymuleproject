@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="mymuleprojectFlow" doc:id="9758ea8a-673b-4d7f-a17d-5211a67c01b4" >
+		<http:listener doc:name="Listener" doc:id="edd6604b-8a01-49b7-91cb-5ded7c4e209a" path="/api">
+			<http:response >
+				<http:body ><![CDATA[#[Hello from Mulesoft]]]></http:body>
+			</http:response>
+		</http:listener>
+	</flow>
+</mule>
